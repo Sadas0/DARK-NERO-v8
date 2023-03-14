@@ -1,0 +1,23 @@
+{
+  "name": "DARK NERO",
+  "description": "whatsapp md bot build with nodejs",
+  "repository": "https://github.com/ALPHAkaveen/v8-bot-yakuza",
+  "logo": "https://telegra.ph/file/3b403e1d0943bceda8133.jpg&name=900x900",
+  "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+    ],
+     "addons": [
+		{
+                "plan": "heroku-postgresql"
+		}
+    ]
+}
